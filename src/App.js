@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import { darkTheme } from './utils/Themes';
 import NavBar from './components/NavBar';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Hero from './components/HeroSection';
 
 const Body = styled.div`
 	background-color: ${({ theme }) => theme.bg};
@@ -17,7 +18,7 @@ function App() {
 			<Router>
 				<NavBar />
 			</Router>
-			<Body></Body>
+			<Body><Hero></Hero></Body>
 		</ThemeProvider>
 	);
 }
