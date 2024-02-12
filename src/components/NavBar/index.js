@@ -191,9 +191,9 @@ const NavBar = () => {
 				</MobileIcon>
 				<NavItems>
 					<NavLink href='about'>About</NavLink>
-					<NavLink href='experiense'>Experiense</NavLink>
-					<NavLink href='education'>Education</NavLink>
 					<NavLink href='skills'>Skills</NavLink>
+					<NavLink href='experiense'>Experiense</NavLink>
+					<NavLink href='education'>Education</NavLink>					
 					<NavLink href='project'>Project</NavLink>
 					<NavLink href='contact'>Contact</NavLink>
 				</NavItems>
