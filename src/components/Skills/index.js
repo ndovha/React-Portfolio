@@ -71,7 +71,7 @@ const Skills = () => {
     const Skill = styled.div`
         width: 100%;
         max-width: 500px;
-        background: ${({ theme }) => theme.card};
+        background: ${({ theme }) => theme.card_light};
         border: 0.1px solid #854ce6;
         box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
         border-radius: 16px;
