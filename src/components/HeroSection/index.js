@@ -22,7 +22,7 @@ const HeroContainer = styled.div`
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
-export const HeroBg = styled.div`
+const HeroBg = styled.div`
 	position: absolute;
 	display: flex;
 	justify-content: end;
@@ -46,7 +46,7 @@ export const HeroBg = styled.div`
 	}
 `;
 
-export const HeroInnerContainer = styled.div`
+ const HeroInnerContainer = styled.div`
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -59,7 +59,7 @@ export const HeroInnerContainer = styled.div`
 	}
 `;
 
-export const HeroLeftContainer = styled.div`
+ const HeroLeftContainer = styled.div`
 	width: 100%;
 	order: 1;
 	@media (max-width: 960px) {
@@ -79,7 +79,7 @@ export const HeroLeftContainer = styled.div`
 	}
 `;
 
-export const HeroRightContainer = styled.div`
+ const HeroRightContainer = styled.div`
 	width: 100%;
 	display: flex;
 	order: 2;
@@ -97,7 +97,7 @@ export const HeroRightContainer = styled.div`
 	}
 `;
 
-export const Title = styled.div`
+ const Title = styled.div`
 	font-weight: 700;
 	font-size: 50px;
 	color: ${({ theme }) => theme.text_primary};
@@ -113,7 +113,7 @@ export const Title = styled.div`
 	}
 `;
 
-export const TextLoop = styled.div`
+ const TextLoop = styled.div`
 	font-weight: 600;
 	font-size: 32px;
 	display: flex;
@@ -130,12 +130,12 @@ export const TextLoop = styled.div`
 	}
 `;
 
-export const Span = styled.span`
+ const Span = styled.span`
 	color: ${({ theme }) => theme.primary};
 	cursor: pointer;
 `;
 
-export const SubTitle = styled.div`
+ const SubTitle = styled.div`
 	font-size: 20px;
 	line-height: 32px;
 	margin-bottom: 42px;
@@ -151,7 +151,7 @@ export const SubTitle = styled.div`
 	}
 `;
 
-export const ResumeButton = styled.a`
+ const ResumeButton = styled.a`
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
@@ -186,11 +186,9 @@ export const ResumeButton = styled.a`
 
 `;
 
-export const Img = styled.img`
-  /* position: relative; */
+ const Img = styled.img`
   width: 100%;
   height: auto;
-  /* height: 100%; */
   max-width: 370px;
   max-height: 380px;
   border-radius: 50%;

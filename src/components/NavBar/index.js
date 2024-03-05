@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
+import logo from '../../images/logo.svg';
 
 const Nav = styled.div`
 	background-color: ${({ theme }) => theme.bg};
@@ -19,7 +20,7 @@ const Nav = styled.div`
 		trastion: 0.8s all ease;
 	}
 `;
-export const NavbarContainer = styled.div`
+const NavbarContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -29,7 +30,7 @@ export const NavbarContainer = styled.div`
 	padding: 0 24px;
 	max-width: 1200px;
 `;
-export const NavLogo = styled(LinkR)`
+const NavLogo = styled(LinkR)`
 	width: 80%;
 	padding: 0 6px;
 	display: flex;
@@ -40,12 +41,16 @@ export const NavLogo = styled(LinkR)`
 		padding: 0 0px;
 	}
 `;
-export const Span = styled.div`
+const Logo = styled.img`
+	width: 55px;
+	height: 55px;
+`;
+const Span = styled.div`
 	padding: 0 4px;
 	font-weight: bold;
 	font-size: 18px;
 `;
-export const NavItems = styled.ul`
+const NavItems = styled.ul`
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -58,7 +63,7 @@ export const NavItems = styled.ul`
 		display: none;
 	}
 `;
-export const NavLink = styled.a`
+const NavLink = styled.a`
 	color: ${({ theme }) => theme.text_primary};
 	font-weight: 500;
 	cursor: pointer;
@@ -72,7 +77,7 @@ export const NavLink = styled.a`
 		border-bottom: 2px solid ${({ theme }) => theme.primary};
 	}
 `;
-export const GitHubButton = styled.a`
+const GitHubButton = styled.a`
 	border: 1.8px solid ${({ theme }) => theme.primary};
 	justify-content: center;
 	display: flex;
@@ -96,7 +101,7 @@ export const GitHubButton = styled.a`
 	}
 `;
 
-export const ButtonContainer = styled.div`
+const ButtonContainer = styled.div`
 	width: 80%;
 	height: 100%;
 	display: flex;
@@ -109,7 +114,7 @@ export const ButtonContainer = styled.div`
 	}
 `;
 
-export const MobileIcon = styled.div`
+const MobileIcon = styled.div`
 	display: none;
 	@media screen and (max-width: 768px) {
 		display: block;
@@ -122,7 +127,7 @@ export const MobileIcon = styled.div`
 		color: ${({ theme }) => theme.text_primary};
 	}
 `;
-export const MobileMenu = styled.div`
+const MobileMenu = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -140,7 +145,7 @@ export const MobileMenu = styled.div`
 	opacity: ${({ open }) => (open ? '100%' : '0')};
 	z-index: ${({ open }) => (open ? '1000' : '-1000')};
 `;
-export const MobileMenuItems = styled.ul`
+const MobileMenuItems = styled.ul`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -151,7 +156,7 @@ export const MobileMenuItems = styled.ul`
 	height: 100%;
 `;
 
-export const MobileMenuLink = styled(LinkR)`
+const MobileMenuLink = styled(LinkR)`
 	color: ${({ theme }) => theme.text_primary};
 	font-weight: 500;
 	cursor: pointer;
@@ -165,6 +170,7 @@ export const MobileMenuLink = styled(LinkR)`
 		border-bottom: 2px solid ${({ theme }) => theme.primary};
 	}
 `;
+
 const NavBar = () => {
 	const [open, setOpen] = useState(false);
 	return (
@@ -180,7 +186,7 @@ const NavBar = () => {
 						cursor: 'pointer',
 					}}
 				>
-					<DiCssdeck size='3rem' /> <Span>Portfolio</Span>
+					<Logo src={logo} alt="logo" /> 
 				</NavLogo>
 				<MobileIcon>
 					<FaBars
@@ -193,8 +199,8 @@ const NavBar = () => {
 					<NavLink href='about'>About</NavLink>
 					<NavLink href='skills'>Skills</NavLink>
 					<NavLink href='experiense'>Experiense</NavLink>
-					<NavLink href='education'>Education</NavLink>					
-					<NavLink href='project'>Project</NavLink>
+					<NavLink href='project'>Projects</NavLink>
+					<NavLink href='education'>Education</NavLink>
 					<NavLink href='contact'>Contact</NavLink>
 				</NavItems>
 				<ButtonContainer>
