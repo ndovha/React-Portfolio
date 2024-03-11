@@ -10,7 +10,8 @@ const Container = styled.div`
 	justify-content: center;
 	position: relative;
 	z-index: 1;
-	padding: 0 16px;
+	padding: 0px 16px;
+    padding-bottom: 20px;
     margin-top: 25px;
 	align-items: center;
     clip-path: polygon(0 0, 70% 5%, 100% 0%, 100% 100%, 0% 100%);
