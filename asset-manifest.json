@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.bf538fe7.css",
+    "main.js": "/React-Portfolio/static/js/main.c649dc56.js",
+    "static/media/figma-project.png": "/React-Portfolio/static/media/figma-project.a21aa92b58be816e2c39.png",
+    "static/media/todo-list.png": "/React-Portfolio/static/media/todo-list.f9c75ceda6116934c084.png",
+    "static/media/IMG_2.jpg": "/React-Portfolio/static/media/IMG_2.5a57d7772f2a034c526c.jpg",
+    "static/media/IMG_1.jpg": "/React-Portfolio/static/media/IMG_1.fb31beca81b1a12849e2.jpg",
+    "static/media/optimist.png": "/React-Portfolio/static/media/optimist.0828957eb3aff5377a64.png",
+    "static/media/airbnb_clone.png": "/React-Portfolio/static/media/airbnb_clone.369045863d2d056f30aa.png",
+    "static/media/dashboard.png": "/React-Portfolio/static/media/dashboard.97aa3deb74789d7fd200.png",
+    "static/media/img.jpg": "/React-Portfolio/static/media/img.b25c270470d2121e1eab.jpg",
+    "static/media/form-project.png": "/React-Portfolio/static/media/form-project.b7cbb2303a1f378a3ff2.png",
+    "static/media/logo.svg": "/React-Portfolio/static/media/logo.6bc273c4578e5acb780a727ea5a1e1b3.svg",
+    "index.html": "/React-Portfolio/index.html",
+    "main.bf538fe7.css.map": "/React-Portfolio/static/css/main.bf538fe7.css.map",
+    "main.c649dc56.js.map": "/React-Portfolio/static/js/main.c649dc56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.c649dc56.js"
+  ]
+}
