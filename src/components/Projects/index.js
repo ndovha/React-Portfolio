@@ -15,6 +15,12 @@ const Container = styled.div`
     margin-top: 25px;
 	align-items: center;
     clip-path: polygon(0 0, 70% 5%, 100% 0%, 100% 100%, 0% 100%);
+    @media (max-width: 960px) {
+		clip-path: polygon(0 0, 70% 2%, 100% 0%, 100% 100%, 0% 100%);
+	}
+    @media (max-width: 500px) {
+		clip-path: polygon(0 0, 75% 0%, 100% 0%, 100% 100%, 0% 100%);
+	}
 `;
 
 const Wrapper = styled.div`
@@ -58,8 +64,8 @@ const Projects = () => {
 			<Wrapper>
 				<Title>Projects</Title>
 				<CardContainer>
-					{projects.map((project) => (
-						<ProjectCard project={project} />
+					{projects.map((project, index) => (
+						<ProjectCard project={project} key={index}/>
 					))}
 				</CardContainer>
 			</Wrapper>

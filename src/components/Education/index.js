@@ -17,6 +17,7 @@ const Container = styled.div`
 	z-index: 1;
 	align-items: center;
 	background: ${({ theme }) => theme.card_light};
+  padding: 40px 0;
 `;
 const Wrapper = styled.div`
 	position: relative;
@@ -61,7 +62,7 @@ const Education = () => {
 				<TimelineSection>
 					<Timeline>
 						{educations.map((education, index) => (
-							<TimelineItem>
+							<TimelineItem key={index}>
 								<TimelineSeparator>
 									<TimelineDot variant='outlined' color='secondary' />
 									{index !== educations.length && (

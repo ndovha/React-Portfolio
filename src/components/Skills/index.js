@@ -131,7 +131,7 @@ const Skills = () => {
 				});
 			},
 			{ threshold: 0.5 }
-		); // Adjust threshold as needed
+		);
 
 		document.querySelectorAll('.skill').forEach((skill) => {
 			observer.observe(skill); // Start observing skill sections
@@ -147,7 +147,7 @@ const Skills = () => {
 	return (
 		<Container id='skills'>
 			<Wrapper>
-				<Title>TECHNICAL SKILLS</Title>
+				<Title>Technical Skills</Title>
 				<SkillsContainer>
 					{skills.map((skill, index) => (
 						<Skill key={index} className='skill'>

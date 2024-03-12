@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import img from '../../images/figma-project.png';
 
 const Card = styled.div`
 	width: 325px;
@@ -124,7 +123,7 @@ const ProjectCard = ({ project }) => {
 			<Image src={imageSrc} />
 			<Tags>
 				{project.tags?.map((tag, index) => (
-					<Tag>{tag}</Tag>
+					<Tag key={index}>{tag}</Tag>
 				))}
 			</Tags>
 			<Details>

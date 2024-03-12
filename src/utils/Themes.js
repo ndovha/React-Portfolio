@@ -10,6 +10,7 @@ export const darkTheme = {
     button:"#854CE6",
     white:"#FFFFFF",
     black:"#000000",
+    nav: "#171721",
 }
 
 export const lightTheme = {

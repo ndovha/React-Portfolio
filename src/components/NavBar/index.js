@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
-import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
 import logo from '../../images/logo.svg';
 
 const Nav = styled.div`
-	background-color: ${({ theme }) => theme.bg};
+	background-color: ${({ theme }) => theme.nav};
 	height: 80px;
 	display: flex;
 	align-items: center;
@@ -44,11 +43,6 @@ const NavLogo = styled(LinkR)`
 const Logo = styled.img`
 	width: 55px;
 	height: 55px;
-`;
-const Span = styled.div`
-	padding: 0 4px;
-	font-weight: bold;
-	font-size: 18px;
 `;
 const NavItems = styled.ul`
 	width: 100%;
@@ -144,18 +138,8 @@ const MobileMenu = styled.div`
 	opacity: ${({ open }) => (open ? '100%' : '0')};
 	z-index: ${({ open }) => (open ? '1000' : '-1000')};
 `;
-const MobileMenuItems = styled.ul`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 32px;
-	list-style: none;
-	width: 100%;
-	height: 100%;
-`;
 
-const MobileMenuLink = styled(LinkR)`
+const MobileMenuLink = styled.a`
 	color: ${({ theme }) => theme.text_primary};
 	font-weight: 500;
 	cursor: pointer;
@@ -185,7 +169,7 @@ const NavBar = () => {
 						cursor: 'pointer',
 					}}
 				>
-					<Logo src={logo} alt="logo" /> 
+					<Logo src={logo} alt='logo' />
 				</NavLogo>
 				<MobileIcon>
 					<FaBars
@@ -195,12 +179,12 @@ const NavBar = () => {
 					/>
 				</MobileIcon>
 				<NavItems>
-					<NavLink href='about'>About</NavLink>
-					<NavLink href='skills'>Skills</NavLink>
-					<NavLink href='experiense'>Experiense</NavLink>
-					<NavLink href='project'>Projects</NavLink>
-					<NavLink href='education'>Education</NavLink>
-					<NavLink href='contact'>Contact</NavLink>
+					<NavLink href='#about'>About</NavLink>
+					<NavLink href='#skills'>Skills</NavLink>
+					<NavLink href='#experiense'>Experiense</NavLink>
+					<NavLink href='#projects'>Projects</NavLink>
+					<NavLink href='#education'>Education</NavLink>
+					<NavLink href='#contact'>Contact</NavLink>
 				</NavItems>
 				<ButtonContainer>
 					<GitHubButton href={Bio.github} target='_blank'>
@@ -218,22 +202,6 @@ const NavBar = () => {
 							About
 						</MobileMenuLink>
 						<MobileMenuLink
-							href='#experiense'
-							onClick={() => {
-								setOpen(!open);
-							}}
-						>
-							Experiense
-						</MobileMenuLink>
-						<MobileMenuLink
-							href='#education'
-							onClick={() => {
-								setOpen(!open);
-							}}
-						>
-							Education
-						</MobileMenuLink>
-						<MobileMenuLink
 							href='#skills'
 							onClick={() => {
 								setOpen(!open);
@@ -242,12 +210,28 @@ const NavBar = () => {
 							Skills
 						</MobileMenuLink>
 						<MobileMenuLink
-							href='#project'
+							href='#experiense'
 							onClick={() => {
 								setOpen(!open);
 							}}
 						>
-							Project
+							Experiense
+						</MobileMenuLink>
+						<MobileMenuLink
+							href='#projects'
+							onClick={() => {
+								setOpen(!open);
+							}}
+						>
+							Projects
+						</MobileMenuLink>
+						<MobileMenuLink
+							href='#education'
+							onClick={() => {
+								setOpen(!open);
+							}}
+						>
+							Education
 						</MobileMenuLink>
 						<MobileMenuLink
 							href='#contact'
