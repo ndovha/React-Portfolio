@@ -168,10 +168,10 @@ const ExperienceCard = ({ experience }) => {
 			{experience.doc && (
 				<ImageWrapper>
 					<a href={img_1} target='_blank' rel='noopener noreferrer'>
-						<Document src={img_1} alt='Your Image' />
+						<Document src={img_1} alt='Your Image' width={70} height={55} />
 					</a>
 					<a href={img_2} target='_blank' rel='noopener noreferrer'>
-						<Document src={img_2} alt='Your Image' />
+						<Document src={img_2} alt='Your Image' width={70} height={55} />
 					</a>
 				</ImageWrapper>
 			)}

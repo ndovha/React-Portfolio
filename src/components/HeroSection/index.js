@@ -156,10 +156,10 @@ const HeroBg = styled.div`
     -moz-appearance: button;
     appearance: button;
     text-decoration: none;
-    width: 95%;
+    width: 250px;
     max-width: 280px;
     text-align: center;
-    padding: 16px 0;
+    padding: 16px 10px;
     color:${({ theme }) => theme.white};
     border-radius: 20px;
     cursor: pointer;
