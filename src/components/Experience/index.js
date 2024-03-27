@@ -55,7 +55,7 @@ const TimelineSection = styled.div`
 
 const Experience = () => {
 	return (
-		<Container id='experiense'>
+		<Container id='experience'>
 			<Wrapper>
 				<Title>Experience</Title>
 				<TimelineSection>
