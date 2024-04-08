@@ -5,7 +5,7 @@ export const Bio = {
 		"I'm a motivated Full Stack Developer with a passion for creating impactful web applications. I possess hands-on expertise in coding, web design, and collaborative projects. My strengths include strong teamwork, quick adaptability, and meticulous attention to detail. Eager to contribute to innovative projects, I bring a positive attitude and a growth mindset to every endeavor. Let's connect and explore the possibilities of collaboration!",
 	github: 'https://github.com/ndovha',
 	resume:
-		'https://drive.google.com/file/d/1UsbKl1kYmnizLWW2fmpAXDQpf9U4UVbl/view?usp=sharing',
+		'https://drive.google.com/file/d/1yiLqv5U_V4lCoQTzBNjB-zCI9HS9LOf0/view?usp=sharing',
 	linkedin: 'www.linkedin.com/in/natalia-dovha-91243a198',
 	email: 'nataliia.dovha.ca@gmail'
 };
